@@ -31,12 +31,12 @@ class ContributeListCreateView(generics.ListCreateAPIView):
 
     def get_queryset(self):
         cause_id = self.kwargs.get('id')
-        return Contribute.objects.filter(cause_id=id)
+        return Contribute.objects.filter(cause_id=cause_id)
 
     def perform_create(self, serializer):
         cause_id = self.kwargs.get('id')
         try:
-            cause = Cause.objects.get(id=id)            
+            cause = Cause.objects.get(id=cause_id)            
         except Cause.DoesNotExist:
             from rest_framework import serializers
             raise serializers.ValidationError("Cause with this ID does not exist.")
