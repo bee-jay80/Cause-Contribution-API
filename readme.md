@@ -96,8 +96,7 @@ A Django RESTful API for managing causes and contributions, with image uploads t
 
 ## API Documentation
 
-- **Swagger UI:** [http://localhost:8000/swagger/](http://localhost:8000/swagger/)
-- **Redoc:** [http://localhost:8000/redoc/](http://localhost:8000/redoc/)
+- **Swagger UI:** [https://beejay.pythonanywhere.com/](https://beejay.pythonanywhere.com/)
 
 ---
 
